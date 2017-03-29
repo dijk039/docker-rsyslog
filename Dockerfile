@@ -8,6 +8,6 @@ EXPOSE 514 514/udp
 
 VOLUME [ "/var/log", "/etc/rsyslog.d" ]
 
-COPY ./etc/rsyslog.conf /etc/rsyslog.conf
+COPY rsyslog.conf /etc/rsyslog.conf
 
 ENTRYPOINT [ "rsyslogd", "-n" ]
